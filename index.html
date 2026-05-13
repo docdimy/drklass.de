@@ -2,29 +2,34 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#2c5282">
 <title>Dr. med. Dietmar Klass</title>
 <meta name="description" content="Facharzt für Gastroenterologie · Lüneburg · Berufspolitik, Vergütung, Versorgung, Digitalisierung">
 <style>
   :root {
     --text: #1a1a1a;
+    --heading: #1e3a5f;
     --muted: #666;
     --accent: #2c5282;
     --bg: #fafafa;
     --border: #e0e0e0;
   }
   * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
     background: var(--bg);
     color: var(--text);
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
   }
   .banner {
     width: 100%;
-    height: 240px;
+    height: calc(240px + env(safe-area-inset-top, 0px));
+    padding-top: env(safe-area-inset-top, 0px);
     background-image: linear-gradient(
         to bottom,
         rgba(0,0,0,0) 55%,
@@ -37,7 +42,7 @@
   }
   @media (min-width: 768px) {
     .banner {
-      height: 340px;
+      height: calc(340px + env(safe-area-inset-top, 0px));
     }
   }
   main {
@@ -50,6 +55,7 @@
     font-size: 1.8rem;
     font-weight: 600;
     margin: 0 0 0.25rem;
+    color: var(--heading);
   }
   .subtitle {
     color: var(--muted);
@@ -67,6 +73,7 @@
   .links {
     border-top: 1px solid var(--border);
     padding-top: 1.5rem;
+    text-align: center;
   }
   .links h2 {
     font-size: 0.85rem;
@@ -80,6 +87,7 @@
     display: flex;
     gap: 0.75rem;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
   }
   .social-icons a {
@@ -109,6 +117,7 @@
     margin-top: 4rem;
     font-size: 0.85rem;
     color: var(--muted);
+    text-align: center;
   }
   footer a {
     color: inherit;
@@ -162,7 +171,7 @@
   </div>
 
   <footer>
-    Kontakt für berufspolitische Anfragen und Medien:
+    Kontakt für berufspolitische Anfragen und Medien:<br>
     <a href="mailto:dietmar@drklass.de">dietmar@drklass.de</a>
   </footer>
 </main>
