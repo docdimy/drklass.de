@@ -8,7 +8,9 @@ Statisches HTML/CSS — kein Build-Tool, kein Framework.
 
 ## Dateien
 
-- `index.html` — Seite
+- `index.html` — Startseite
+- `impressum.html` — Impressum
+- `datenschutz.html` — Datenschutzerklärung
 - `portrait.webp` — Porträtfoto
 - `lueneburg.webp` — Bannerbild
 - `og-image.png` — Open Graph Vorschaubild
