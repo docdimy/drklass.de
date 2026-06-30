@@ -9,12 +9,10 @@
   <link rel="stylesheet" href="/assets/css/text.css">
 </head>
 <body>
-  <nav class="text-nav">
-    <a href="/texte/" class="back-link">← Texte</a>
-    <a href="/" class="home-link">drklass.de</a>
-  </nav>
+  <main class="prose">
+    <a class="back" href="/">← Zurück</a>
 
-  <article class="prose">
+    <article>
     <header class="prose-header">
       {% if page.image %}
       <figure class="prose-image">
@@ -29,9 +27,12 @@
       <p class="prose-subtitle">{{ page.subtitle }}</p>
       {% endif %}
 
+      {% assign words = content | strip_html | number_of_words %}
+      {% assign minutes = words | divided_by: 200 | plus: 1 %}
       <div class="prose-meta">
         {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d. %B %Y" }}</time>{% endif %}
         {% if page.genre %}<span class="genre">{{ page.genre }}</span>{% endif %}
+        <span class="reading-time">{{ minutes }} min</span>
       </div>
     </header>
 
@@ -42,6 +43,7 @@
     <footer class="prose-footer">
       <span class="endmark" aria-hidden="true">•</span>
     </footer>
-  </article>
+    </article>
+  </main>
 </body>
 </html>

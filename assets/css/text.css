@@ -23,30 +23,22 @@ body {
 }
 
 /* ── Navigation ─────────────────────────────────────────────────── */
-.text-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: var(--measure);
-  margin: 0 auto;
-  padding: 1.5rem 0 2.5rem;
+.back {
+  display: inline-block;
+  margin-bottom: 2rem;
   font-family: var(--sans);
-  font-size: 0.85rem;
-}
-
-.text-nav a {
-  color: var(--stahlblau);
+  font-size: 0.9rem;
+  color: var(--meta);
   text-decoration: none;
-  letter-spacing: 0.02em;
 }
 
-.text-nav a:hover { text-decoration: underline; }
+.back:hover { color: var(--stahlblau); }
 
 /* ── Artikel-Container ──────────────────────────────────────────── */
 .prose {
   max-width: var(--measure);
-  margin: 0 auto;
-  padding-bottom: 6rem;
+  margin: 3rem auto 4rem;
+  padding: 0 1.5rem;
 }
 
 /* ── Header ─────────────────────────────────────────────────────── */
@@ -100,6 +92,8 @@ body {
 
 .genre { color: var(--stahlblau); }
 
+.reading-time { color: var(--meta); }
+
 /* ── Fließtext ──────────────────────────────────────────────────── */
 .prose-body p {
   margin-bottom: 1.5rem;
@@ -109,9 +103,9 @@ body {
 
 .prose-body p:first-of-type::first-letter {
   float: left;
-  font-size: 3.2rem;
-  line-height: 0.85;
-  margin: 0.05em 0.08em 0 0;
+  font-size: 4.1rem;
+  line-height: 0.82;
+  margin: 0.06em 0.08em 0 0;
   color: var(--stahlblau);
   font-weight: 400;
 }
@@ -161,8 +155,8 @@ body {
 /* ── Übersichtsseite ────────────────────────────────────────────── */
 .texte-index {
   max-width: var(--measure);
-  margin: 0 auto;
-  padding: 3rem 0 6rem;
+  margin: 3rem auto 4rem;
+  padding: 0 1.5rem 6rem;
 }
 
 .texte-index h1 {
