@@ -30,7 +30,7 @@
           </div>
           <div class="item-meta">
             {% if text.genre %}{{ text.genre }}<br>{% endif %}
-            {% if text.date %}{{ text.date | date: "%Y" }}{% endif %}
+            {% if text.date %}{{ text.date | date: "%B %Y" }}{% endif %}
           </div>
         </a>
       </li>
