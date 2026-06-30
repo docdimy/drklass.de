@@ -155,25 +155,11 @@ body {
 /* ── Teilen ─────────────────────────────────────────────────────── */
 .share {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 2.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #e0ddd8;
-}
-
-.share-label {
-  font-family: var(--sans);
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--meta);
-  white-space: nowrap;
-}
-
-.share-icons {
-  display: flex;
+  justify-content: center;
   gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e0ddd8;
 }
 
 .share-btn {
