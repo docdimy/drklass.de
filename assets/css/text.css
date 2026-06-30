@@ -184,6 +184,7 @@ body {
 .share-btn.facebook:hover  { color: #1877F2; border-color: #1877F2; }
 .share-btn.bluesky:hover   { color: #0085FF; border-color: #0085FF; }
 .share-btn.mastodon:hover  { color: #6364FF; border-color: #6364FF; }
+.share-btn.x:hover         { color: #000; border-color: #000; }
 .share-btn.email:hover     { color: var(--stahlblau); border-color: var(--stahlblau); }
 
 /* ── Übersichtsseite ────────────────────────────────────────────── */
