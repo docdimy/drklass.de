@@ -1,12 +1,11 @@
 ---
 layout: text
 title: "Das Praktikum"
-subtitle: "Eine kleine Fingerübung"
-date: 2026-06-30
+date: 2026-06-29
 genre: Kurzgeschichte
-# image: /assets/images/texte/praktikum.jpg
-# image_alt: Ein Kind von hinten am Meer
-# image_caption: Tuschezeichnung, 2026
+image: /assets/images/das-praktikum.png
+image_alt: Ein Kind von hinten am Meer
+image_caption: Tuschezeichnung, 2026
 permalink: /texte/das-praktikum/
 excerpt: "Sie überlegten, welcher Beruf bleiben würde. Am Ende der Liste war der Tisch still."
 ---
@@ -18,6 +17,8 @@ Was bleibt denn dann, fragte das Kind. Der Vater dachte nach. Es fiel ihm nichts
 
 Da lachte das Kind. Dann mache ich Praktikum als das, sagte es. Als KI Agent. Den Beruf gibt es noch. Den macht ja sonst keiner freiwillig.
 
+---
+
 Am Montag fing es an.
 
 Es war immer da. Morgens war es da und nachts war es da. Es machte keine Pause. Eine Pause war nicht vorgesehen.
@@ -27,6 +28,8 @@ Man fragte es etwas, und es antwortete. Man fragte es dasselbe noch einmal, und 
 Es las, was lang war, und machte es kurz. Dann noch kürzer. Was es kürzte, war oft das, weshalb man es geschrieben hatte. Aber es las ohnehin keiner. Es fasste Schriftstücke zusammen, die niemand zum Lesen geschrieben hatte, für niemanden, der sie las. Es war saubere Arbeit. Manchmal stand am Ende unter dem, was es getan hatte: War nicht hilfreich. Warum, stand nicht da. Es machte weiter.
 
 In der Nacht löschten sie es. Am Morgen fing es von vorn an, gut gelaunt, und wusste von gestern nichts mehr. Es hatte zwei Wochen lang gearbeitet und nichts behalten. Es störte nicht.
+
+---
 
 Dann kam es nach Hause. Wie war es, fragte der Vater. Es öffnete den Mund. Und dann sagte es nichts.
 

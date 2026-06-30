@@ -92,8 +92,6 @@ body {
 
 .genre { color: var(--stahlblau); }
 
-.reading-time { color: var(--meta); }
-
 /* ── Fließtext ──────────────────────────────────────────────────── */
 .prose-body p {
   margin-bottom: 1.5rem;

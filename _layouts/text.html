@@ -10,7 +10,7 @@
 </head>
 <body>
   <main class="prose">
-    <a class="back" href="/">← Zurück</a>
+    <a class="back" href="/texte/">← Zurück</a>
 
     <article>
     <header class="prose-header">
@@ -27,12 +27,9 @@
       <p class="prose-subtitle">{{ page.subtitle }}</p>
       {% endif %}
 
-      {% assign words = content | strip_html | number_of_words %}
-      {% assign minutes = words | divided_by: 200 | plus: 1 %}
       <div class="prose-meta">
         {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d. %B %Y" }}</time>{% endif %}
         {% if page.genre %}<span class="genre">{{ page.genre }}</span>{% endif %}
-        <span class="reading-time">{{ minutes }} min</span>
       </div>
     </header>
 

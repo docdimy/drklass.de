@@ -19,8 +19,13 @@ _config.yml             — Jekyll-Konfiguration
 _layouts/
   text.html             — Lese-Layout für einzelne Texte
   texte_index.html      — Übersichtsseite /texte/
-assets/css/
-  text.css              — Typografie-Styling für den Texte-Bereich
+assets/
+  css/
+    text.css            — Typografie-Styling für den Texte-Bereich
+  images/
+    portrait.webp       — Porträtfoto
+    lueneburg.webp      — Bannerbild
+    og-image.webp       — Open Graph Vorschaubild
 texte/
   index.html            — Einstieg /texte/
 _texte/
@@ -35,11 +40,14 @@ Datei in `_texte/` anlegen:
 ---
 layout: text
 title: "Titel der Geschichte"
+subtitle: "Untertitel"   # optional
 date: 2026-01-01
-genre: Kurzgeschichte
+genre: Kurzgeschichte (Freitext)
 permalink: /texte/url-freundlicher-titel/
-excerpt: "Erster Satz für die Übersicht."
-# image: /assets/images/texte/bild.jpg   # optional
+excerpt: "Erster Satz für die Übersicht." (Teaser auf der Übersicht)
+# image: /assets/images/bild.jpg   # optional
+# image_alt: "Alternativtext"   # optional
+# image_caption: Bildunterschrift (z.b. Quelle)   # optional
 ---
 
 Text in Markdown...
@@ -53,4 +61,4 @@ Bannerfoto: [Philipp Deus](https://unsplash.com/de/@deuspix) auf [Unsplash](http
 
 ## Lizenz
 
-© Dr. med. Dietmar Klass. Alle Rechte vorbehalten.
+© Dr. med. Dietmar Klass 2026. Alle Rechte vorbehalten.
