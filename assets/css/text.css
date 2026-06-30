@@ -53,6 +53,8 @@ body {
 .prose-image img {
   width: 100%;
   height: auto;
+  max-height: 480px;
+  object-fit: cover;
   display: block;
 }
 
@@ -184,7 +186,19 @@ body {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 1rem;
-  align-items: baseline;
+  align-items: center;
+}
+
+.texte-list a.has-image {
+  grid-template-columns: 72px 1fr auto;
+}
+
+.item-thumb {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 3px;
+  display: block;
 }
 
 .texte-list a:hover .item-title { color: var(--stahlblau); }

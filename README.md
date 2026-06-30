@@ -45,8 +45,8 @@ date: 2026-01-01
 genre: Kurzgeschichte (Freitext)
 permalink: /texte/url-freundlicher-titel/
 excerpt: "Erster Satz für die Übersicht." (Teaser auf der Übersicht)
-# image: /assets/images/bild.jpg   # optional
-# image_alt: "Alternativtext"   # optional
+image: /assets/images/bild.jpg   # optional
+image_alt: "Alternativtext"   # optional
 # image_caption: Bildunterschrift (z.b. Quelle)   # optional
 ---
 

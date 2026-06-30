@@ -5,7 +5,7 @@ date: 2026-06-29
 genre: Kurzgeschichte
 image: /assets/images/das-praktikum.png
 image_alt: Ein Kind von hinten am Meer
-image_caption: Tuschezeichnung, 2026
+# image_caption: Tuschezeichnung, 2026
 permalink: /texte/das-praktikum/
 excerpt: "Sie überlegten, welcher Beruf bleiben würde. Am Ende der Liste war der Tisch still."
 ---

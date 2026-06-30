@@ -18,7 +18,10 @@
       {% assign texte = site.texte | sort: 'date' | reverse %}
       {% for text in texte %}
       <li>
-        <a href="{{ text.url }}">
+        <a href="{{ text.url }}"{% if text.image %} class="has-image"{% endif %}>
+          {% if text.image %}
+          <img class="item-thumb" src="{{ text.image }}" alt="{{ text.image_alt | default: text.title }}">
+          {% endif %}
           <div>
             <div class="item-title">{{ text.title }}</div>
             {% if text.excerpt %}
