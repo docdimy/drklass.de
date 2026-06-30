@@ -7,7 +7,7 @@ image: /assets/images/das-praktikum.png
 image_alt: Ein Kind von hinten am Meer
 # image_caption: Tuschezeichnung, 2026
 permalink: /texte/das-praktikum/
-excerpt: "Sie überlegten, welcher Beruf bleiben würde. Am Ende der Liste war der Tisch still."
+excerpt: "Sie saßen am Abend am Tisch und überlegten, welcher Beruf bleiben würde. Am Ende der Liste war der Tisch still."
 ---
 Das Kind sollte ein Praktikum machen. Zwei Wochen. So stand es im Brief der Schule. Es sollte hineinsehen in einen Beruf, sagten sie.
 
@@ -15,7 +15,7 @@ Sie saßen am Abend am Tisch und überlegten, was es erwartet, welcher Beruf ble
 
 Was bleibt denn dann, fragte das Kind. Der Vater dachte nach. Es fiel ihm nichts ein, was bleiben würde.
 
-Da lachte das Kind. Dann mache ich Praktikum als das, sagte es. Als KI Agent. Den Beruf gibt es noch. Den macht ja sonst keiner freiwillig.
+Da lachte das Kind. Dann mache ich Praktikum als das, sagte es. Als KI Agent. Den Beruf gibt es noch. Den macht sonst keiner freiwillig.
 
 ---
 
