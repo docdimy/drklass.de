@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texte — Dr. Klass</title>
+  <meta name="description" content="Prosa, Kurzgeschichten und literarische Texte von Dietmar Klass.">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="/assets/css/text.css">
+</head>
+<body>
+  <nav class="text-nav">
+    <span></span>
+    <a href="/" class="home-link">drklass.de</a>
+  </nav>
+
+  <main class="texte-index">
+    <h1>Texte</h1>
+    <p class="index-intro">Prosa &amp; Kurzgeschichten</p>
+
+    <ul class="texte-list">
+      {% assign texte = site.texte | sort: 'date' | reverse %}
+      {% for text in texte %}
+      <li>
+        <a href="{{ text.url }}">
+          <div>
+            <div class="item-title">{{ text.title }}</div>
+            {% if text.excerpt %}
+            <div class="item-excerpt">{{ text.excerpt | strip_html | truncate: 120 }}</div>
+            {% endif %}
+          </div>
+          <div class="item-meta">
+            {% if text.genre %}{{ text.genre }}<br>{% endif %}
+            {% if text.date %}{{ text.date | date: "%Y" }}{% endif %}
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </main>
+</body>
+</html>

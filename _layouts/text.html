@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} — Dr. Klass</title>
+  <meta name="description" content="{{ page.excerpt | default: page.title | strip_html | truncate: 160 }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="/assets/css/text.css">
+</head>
+<body>
+  <nav class="text-nav">
+    <a href="/texte/" class="back-link">← Texte</a>
+    <a href="/" class="home-link">drklass.de</a>
+  </nav>
+
+  <article class="prose">
+    <header class="prose-header">
+      {% if page.image %}
+      <figure class="prose-image">
+        <img src="{{ page.image }}" alt="{{ page.image_alt | default: page.title }}">
+        {% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}
+      </figure>
+      {% endif %}
+
+      <h1 class="prose-title">{{ page.title }}</h1>
+
+      {% if page.subtitle %}
+      <p class="prose-subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+
+      <div class="prose-meta">
+        {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d. %B %Y" }}</time>{% endif %}
+        {% if page.genre %}<span class="genre">{{ page.genre }}</span>{% endif %}
+      </div>
+    </header>
+
+    <div class="prose-body">
+      {{ content }}
+    </div>
+
+    <footer class="prose-footer">
+      <span class="endmark" aria-hidden="true">•</span>
+    </footer>
+  </article>
+</body>
+</html>

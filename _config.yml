@@ -1,0 +1,18 @@
+title: Dr. med. Dietmar Klass
+url: https://drklass.de
+permalink: pretty
+
+collections:
+  texte:
+    output: true
+    permalink: /texte/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: texte
+    values:
+      layout: text
+
+exclude:
+  - README.md

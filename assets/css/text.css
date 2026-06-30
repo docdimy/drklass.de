@@ -1,0 +1,230 @@
+/* ── Typografie ─────────────────────────────────────────────────── */
+:root {
+  --stahlblau:   #2e5c8a;
+  --weinrot:     #8b1a1a;
+  --text:        #1a1a1a;
+  --meta:        #666;
+  --bg:          #faf9f7;
+  --measure:     65ch;
+  --serif:       "Georgia", "Times New Roman", serif;
+  --sans:        system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 18px; scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  line-height: 1.85;
+  padding: 0 1rem;
+}
+
+/* ── Navigation ─────────────────────────────────────────────────── */
+.text-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 1.5rem 0 2.5rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.text-nav a {
+  color: var(--stahlblau);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.text-nav a:hover { text-decoration: underline; }
+
+/* ── Artikel-Container ──────────────────────────────────────────── */
+.prose {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding-bottom: 6rem;
+}
+
+/* ── Header ─────────────────────────────────────────────────────── */
+.prose-header { margin-bottom: 3rem; }
+
+.prose-image {
+  margin: 0 0 2rem;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.prose-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.prose-image figcaption {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--meta);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.prose-title {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+}
+
+.prose-subtitle {
+  font-size: 1.1rem;
+  color: var(--meta);
+  font-style: italic;
+  margin-bottom: 0.8rem;
+}
+
+.prose-meta {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--meta);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.genre { color: var(--stahlblau); }
+
+/* ── Fließtext ──────────────────────────────────────────────────── */
+.prose-body p {
+  margin-bottom: 1.5rem;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+.prose-body p:first-of-type::first-letter {
+  float: left;
+  font-size: 3.2rem;
+  line-height: 0.85;
+  margin: 0.05em 0.08em 0 0;
+  color: var(--stahlblau);
+  font-weight: 400;
+}
+
+.prose-body h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  margin: 2.5rem 0 1rem;
+  color: var(--meta);
+}
+
+.prose-body blockquote {
+  border-left: 2px solid var(--stahlblau);
+  margin: 2rem 0 2rem 1rem;
+  padding-left: 1.5rem;
+  font-style: italic;
+  color: var(--meta);
+}
+
+.prose-body hr {
+  border: none;
+  text-align: center;
+  margin: 2.5rem 0;
+  color: var(--meta);
+}
+
+.prose-body hr::before {
+  content: "· · ·";
+  letter-spacing: 0.5em;
+}
+
+/* ── Schlusszeichen ─────────────────────────────────────────────── */
+.prose-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0ddd8;
+}
+
+.endmark {
+  color: var(--weinrot);
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+/* ── Übersichtsseite ────────────────────────────────────────────── */
+.texte-index {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 3rem 0 6rem;
+}
+
+.texte-index h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.texte-index .index-intro {
+  color: var(--meta);
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+.texte-list { list-style: none; }
+
+.texte-list li {
+  border-bottom: 1px solid #e0ddd8;
+  padding: 1.4rem 0;
+}
+
+.texte-list li:first-child { border-top: 1px solid #e0ddd8; }
+
+.texte-list a {
+  text-decoration: none;
+  color: inherit;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.texte-list a:hover .item-title { color: var(--stahlblau); }
+
+.item-title {
+  font-size: 1.15rem;
+  transition: color 0.15s;
+}
+
+.item-meta {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--meta);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.item-excerpt {
+  font-size: 0.9rem;
+  color: var(--meta);
+  margin-top: 0.3rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+
+  .texte-list a {
+    grid-template-columns: 1fr;
+  }
+}
