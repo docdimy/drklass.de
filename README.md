@@ -1,19 +1,51 @@
 # drklass.de
 
-Persönliche Social-Landingpage von Dr. med. Dietmar Klass.
+Persönliche Website von Dr. med. Dietmar Klass — Facharzt für Gastroenterologie, Lüneburg.
 
 ## Stack
 
-Statisches HTML/CSS — kein Build-Tool, kein Framework.
+- **Landingpage** (`index.html`) — statisches HTML/CSS, kein Build-Tool
+- **Texte** (`/texte/`) — Jekyll-Collection für Prosa und Kurzgeschichten
 
-## Dateien
+GitHub Pages baut Jekyll automatisch bei jedem Push.
 
-- `index.html` — Startseite
-- `impressum.html` — Impressum
-- `datenschutz.html` — Datenschutzerklärung
-- `portrait.webp` — Porträtfoto
-- `lueneburg.webp` — Bannerbild
-- `og-image.png` — Open Graph Vorschaubild
+## Struktur
+
+```
+index.html              — Landingpage (statisch, kein Front Matter)
+impressum.html
+datenschutz.html
+_config.yml             — Jekyll-Konfiguration
+_layouts/
+  text.html             — Lese-Layout für einzelne Texte
+  texte_index.html      — Übersichtsseite /texte/
+assets/css/
+  text.css              — Typografie-Styling für den Texte-Bereich
+texte/
+  index.html            — Einstieg /texte/
+_texte/
+  *.md                  — Einzelne Texte als Markdown
+```
+
+## Neuen Text veröffentlichen
+
+Datei in `_texte/` anlegen:
+
+```yaml
+---
+layout: text
+title: "Titel der Geschichte"
+date: 2026-01-01
+genre: Kurzgeschichte
+permalink: /texte/url-freundlicher-titel/
+excerpt: "Erster Satz für die Übersicht."
+# image: /assets/images/texte/bild.jpg   # optional
+---
+
+Text in Markdown...
+```
+
+`---` im Text erzeugt einen `· · ·`-Abschnittstrenner.
 
 ## Bildnachweise
 
