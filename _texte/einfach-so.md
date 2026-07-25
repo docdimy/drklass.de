@@ -9,7 +9,7 @@ genre: Gedicht
 permalink: /texte/einfach-so/
 excerpt: "Einer stirbt im Blech der Straße, eine, eh sie atmen darf, doch welche sterben einfach so."
 ---
-{: style="text-align: center;"}
+<div class="poem" markdown="1">
 Eine nimmt sich selbst das Leben  
 einen frisst die Krankheit auf  
 eine stirbt durch fremde Hände  
@@ -44,3 +44,4 @@ doch welche sterben einfach so
 Doch welche sterben einfach so
 
 Und welcher bin dann ich
+</div>
