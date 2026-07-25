@@ -1,5 +1,5 @@
 ---
-layout: text
+layout: poem
 title: "Einfach so"
 date: 2026-07-25
 genre: Gedicht
@@ -9,7 +9,6 @@ genre: Gedicht
 permalink: /texte/einfach-so/
 excerpt: "Einer stirbt im Blech der Straße, eine, eh sie atmen darf, doch welche sterben einfach so."
 ---
-<div class="poem" markdown="1">
 Eine nimmt sich selbst das Leben  
 einen frisst die Krankheit auf  
 eine stirbt durch fremde Hände  
@@ -44,4 +43,3 @@ doch welche sterben einfach so
 Doch welche sterben einfach so
 
 Und welcher bin dann ich
-</div>
