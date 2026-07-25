@@ -7,7 +7,7 @@ genre: Gedicht
 # image_alt: Eine angelehnte Tür in einem leeren Flur
 # image_caption: Tuschezeichnung, 2026
 permalink: /texte/einfach-so/
-excerpt: "Einer stirbt im Blech der Straße, eine, eh sie atmen darf, doch welche sterben einfach so."
+excerpt: "Einer stirbt im Blech der Straße, eine, eh sie atmen darf - doch welche sterben einfach so."
 ---
 Eine nimmt sich selbst das Leben  
 einen frisst die Krankheit auf  
