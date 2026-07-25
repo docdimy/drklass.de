@@ -138,6 +138,36 @@ body {
   letter-spacing: 0.5em;
 }
 
+/* ── Vers ───────────────────────────────────────────────────────── */
+/* An text.css anhängen, nach dem Fließtext-Block.                   */
+
+.prose-body.poem {
+  width: max-content;
+  max-width: 100%;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.prose-body.poem p {
+  hyphens: none;
+  -webkit-hyphens: none;
+  margin-bottom: 1.9rem;
+}
+
+/* Initiale im Vers zurücknehmen */
+.prose-body.poem p:first-of-type::first-letter {
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  color: inherit;
+  font-weight: inherit;
+}
+
+@media (max-width: 600px) {
+  .prose-body.poem { width: auto; }
+}
+
 /* ── Schlusszeichen ─────────────────────────────────────────────── */
 .prose-footer {
   text-align: center;
